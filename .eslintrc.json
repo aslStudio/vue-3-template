@@ -1,0 +1,87 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "globals": {
+    "__dirname": "readonly",
+    "__pathname": "readonly"
+  },
+  "extends": ["plugin:vue/strongly-recommended", "eslint:recommended", "@vue/typescript/recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "no-use-before-define": "off",
+    "curly": "error",
+    "strict": ["error", "function"],
+    "semi-style": ["error", "last"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "no-var": "error",
+    "no-global-assign": "error",
+    "no-empty": [
+      "warn",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "eqeqeq": ["warn", "smart"],
+    "dot-location": ["warn", "property"],
+    "dot-notation": "warn",
+    "no-unused-vars": "warn",
+    "no-useless-return": "warn",
+    "brace-style": [
+      "warn",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "semi": ["warn", "always"],
+    "semi-spacing": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "eol-last": ["error", "always"],
+    "space-before-function-paren": [
+      "warn",
+      {
+        "asyncArrow": "always",
+        "named": "never",
+        "anonymous": "never"
+      }
+    ],
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "vue/html-self-closing": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/multiline-html-element-content-newline": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/mustache-interpolation-spacing": "off",
+    "vue/component-definition-name-casing": "off",
+    "vue/max-attributes-per-line": 1,
+    "vue/html-closing-bracket-newline": "off",
+    "vue/no-deprecated-slot-attribute": "off",
+    "vue/no-v-html": "off",
+    "vue/first-attribute-linebreak": [
+      "error",
+      {
+        "singleline": "ignore",
+        "multiline": "below"
+      }
+    ]
+  }
+}
